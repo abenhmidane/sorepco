@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Site officiel de l'entreprise sorepco composites world Tunisie" />
+        <title>Sorepco composites world Tunisie</title>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <script lang="jv">
+        function refreshScrollInUrl()//tu enregistre la position du scroll dans l'url
+{
+    var scroll = document.body.scrollTop;
+    var uri = document.location.href;
+    uri = uri.replace(/scroll=[\d]+/, "scroll="+scroll);
+    //console.debug(uri);
+    document.location=uri;
+}
+//tu recupere la valeur dans lurl
+function goScrollPos()
+{
+    var uri = document.location.href;
+    /scroll=([\d]+)/.exec(uri);
+    //console.debug(RegExp.$1);
+    $(window).scrollTop(RegExp.$1);
+}
+goScrollPos();
+        </script>
+    </head>
+    <body onload="goScrollPos()" onunload="refreshScrollInUrl()">
+    <div id="site">
+        <div id="headeranim"><!-- animation flash --></div>
+        <div id="menu"> 
+            <ul id="p2">
+                <a id="noline" href="../Societe.html"> <li id="p1">Société</li> </a>
+                <a id="noline" href="../domaineActivite.html"> <li id="p1">Domaines d'activités</li> </a>
+                <a id="noline" href="../produit_fournisseur.html"> <li id="p1">Produits</li> </a>
+                <a id="noline" href="../application_process.html"> <li id="p1">Application et Process</li> </a>
+                <a id="noline" href="../Partenaires.html"> <li id="p1">Partenaires</li> </a>
+                <a id="noline" href="../contact.html"> <li id="p1">Contact</li> </a>
+            </ul>
+        </div>
+        <div id="path"> <a id="nolinepath" href="../Index.html">Accueil&nbsp;&nbsp;&nbsp;</a> <b> > </b> <a id="nolinepath" href="../produit_fournisseur.html">Produits&nbsp;&nbsp;&nbsp;</a> <b> > </b> <a id="nolinepath" href="Divers.html">Divers&nbsp;&nbsp;&nbsp;</a> <b> > </b> </div>
+        <div id="margeleft">
+          
+<ul>
+                <li id="nav">  <a id="nav" href="../ProduitsEtFournisseurs/Resinespolyester.html">Résines polyester</a> </li>
+                <li id="nav">  <a id="nav" href="../ProduitsEtFournisseurs/GelcoatEtColles.html">Gelcoat Et Colles</a> </li>
+                <li id="nav">  <a id="nav" href="../ProduitsEtFournisseurs/FibreDeVerre.html">Fibre De Verre</a> </li>
+                <li id="nav">  <a id="nav" href="../ProduitsEtFournisseurs/PeroxydesEtAdditifs.html">Peroxydes Et Additifs</a> </li>
+                <li id="nav">  <a id="nav" href="../ProduitsEtFournisseurs/ResinesEpoxy.html">Résines Epoxy</a> </li>
+                <li id="nav">  <a id="nav" href="../ProduitsEtFournisseurs/ResinesPolyurethane.html">Résines Polyurethane</a> </li>
+                <li id="nav">  <a id="nav" href="../ProduitsEtFournisseurs/AgentsDeDemoulage.html">Agents De Démoulage</a> </li>
+                <li id="nav">  <a id="nav" href="../ProduitsEtFournisseurs/Machines.html">Machines</a> </li>
+                <li id="nav">  <a id="nav" href="../ProduitsEtFournisseurs/Outillages.html">Outillages</a> </li>
+                <li id="nav">  <a id="nav" href="../ProduitsEtFournisseurs/ResinesAcryliques.html">Résines Acryliques</a> </li> 
+                <li id="nav">  <a id="nav" href="../ProduitsEtFournisseurs/Divers.html">Divers</a> </li>
+       </ul>
+            
+        </div>
+        <div id="content">
+        <h1>Divers</h1><hr>
+            <ul>
+            <li id=produit>SOLVANT</li>
+            <li id=produit>CHARGES</li>
+            <li id=produit>MASTIC</li>
+            <li id=produit>PATE A POLIR</li>
+                </ul><hr>
+        </div>
+         <div id="footer">
+        Adresse: Lot n° 60, Z.I M’Ghira II - 2084 Fouchana / Tél.: +216 79 408 428 - 79 408 538 / Gsm: +216 98 439 360<br>
+            Email : marouen-sorepco@gnet.tn
+        </div>
+    </div>    
+    </body>
+
+</html>
